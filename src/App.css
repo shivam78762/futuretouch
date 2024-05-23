@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5f39ff #0e0e0e;
+}
+
+.contact-bg {
+  background-image: url(./Components/Assets//h2-contact-bg.jpg);
+  background-repeat: no-repeat;
+}
+.bg-circle {
+  background-color: rgb(225 225 255 / 60%) !important;
+}
+.padding-about {
+  padding: 1px;
+}
+.bg-image {
+  background-image: url(./Components/Assets/bg-light2.png);
+  background-repeat: no-repeat;
+}
+.service-bg {
+  background-image: url(./Components//Assets/wave-bg.png);
+}
+.w-cards {
+  width: 32%;
+  border-radius: 40px 8px;
+}
+.border-custom {
+  border-radius: 8px 40px;
+}
+.w-cards:hover {
+  box-shadow: 0 15px 39px -11px #46638e45;
+  transform: translate(0, -5px);
+}
+.custom-shadow:hover {
+  box-shadow: 0 15px 39px -11px #46638e45;
+  transform: translate(0, -5px);
+}
+.shadow-location {
+  box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059),
+    0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071),
+    0 25px 40px -30px rgba(0, 0, 0, 0.2);
+}
+.shadow-location:hover {
+  box-shadow: 0 15px 39px -11px #46638e45;
+  transform: translate(0, -5px);
+}
+.dg-bg2 {
+  background: linear-gradient(
+    45deg,
+    #ff0048 0%,
+    #ff3870 50%,
+    #c300c3 100%
+  ) !important;
+}
+.bg-gradient12 {
+  background: linear-gradient(to right, #9c27b0 0, #673ab7 100%);
+}
+.info-card {
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
+}span.circle {
+    right: -130px;
+    width: 200px;
+    height: 200px;
+}
+span.circle, span.circle2 {
+    background: rgba(255, 255, 255, .2);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -10%;
+}
+
+.lnk, button {
+  position: relative;
+  overflow: hidden;
+}
+ button {
+  -webkit-transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  -o-transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+}
