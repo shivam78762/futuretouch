@@ -6,7 +6,13 @@ const Navbartwo = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
 
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -74,7 +80,8 @@ const Navbartwo = () => {
                 Home
               </Link>
             </li>
-            <li  onClick={() => setIsOpen(!isOpen)}>
+            <li       onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
             <Link
             to="/about" 
         
